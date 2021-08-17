@@ -17,15 +17,17 @@ console.log(correctAnswer);
 
 subButton.addEventListener('click', () => {
     let newGuess = Number(userGuess.value);
-    let correctHighOrLow = compareNumbers(newGuess, correctAnswer);
-    if (correctHighOrLow === 0) {
+    let correctHighOrLow = compareNumbers(newGuess, correctAnswer); //will guess be correct, high or low
+    if (correctHighOrLow === 0) { //guess is correct
         displayWin();
         subButton.disabled = true;
         return;
     }
-    numOfGuesses = evaluateDecrement(correctHighOrLow, numOfGuesses);
+
+    numOfGuesses = evaluateDecrement(correctHighOrLow, numOfGuesses); //guess is high or low, respond accordingly
     displayGuessesRemaining(numOfGuesses);
-    if (numOfGuesses <= 0) {
+
+    if (numOfGuesses <= 0) { //out of guesses
         subButton.disabled = true;
         displayLose();
     }
