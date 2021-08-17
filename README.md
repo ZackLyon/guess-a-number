@@ -9,3 +9,27 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+## HTML
+<hr>
+
+#### Input
+1) `input` for number
+2) `button` for submitting
+3) `button` for play again
+
+#### View
+1) `<div>` to display evaluation of whether too high or low
+1) `<span>` and `<div>` to display how many guesses remaining
+1) `<div>` to display win/loss
+
+## JS
+<hr>
+
+#### Functions
+1) `compareNumbers` function - parameters `guess` and `correctNumber`, returns `-1, 0, 1` for too low, correct, or too high, respectively
+1) `randomNumber` - returns random number as whole integer, assign to `guess`
+1) `playAgain` sets `guess` back to 4
+1) `disablePlay` sets `guess` to 0
+
+#### Events
+1) two `eventListeners`, one for each button
