@@ -19,22 +19,21 @@
     <main>
         <section class='input-wrapper'>
             <div>
+                <div>Enter guess below:</div>
                 <input id='user-guess' type="text"> 
                 <button id='sub-btn'>Submit</button>
             </div>
             <button id='reset-btn'>Play Again</button>
         </section>
         <section class='view-wrapper'>
-            <div id='display-evaluation'>Make a Guess</div>
+            <div id='display-evaluation'>Awaiting Guess</div>
             <div id='guess-statement'>There are <span id='guesses-remaining'>4</span> guesses remaining.</div>
             <div> You have achieved <span id='victories'>0</span> victories.</div>
             <div> You have suffered <span id='defeats'>0</span> defeats.</div>
             <div id='outcome' class='hidden'></div>
         </section>
     </main>
-    <footer>
-      
-    </footer>
+
 
     <script type="module" src="./app.js"></script>
 </body>

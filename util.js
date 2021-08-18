@@ -16,6 +16,7 @@ function clearInput() {
     inputEl.value = '';
 }
 function displayWin() {
+    evaluationEl.textContent = 'That\'s it!';
     outcomeEl.textContent = 'Congratulations! You guessed correctly!';
     outcomeEl.classList.remove('hidden');
 }
@@ -27,6 +28,7 @@ function displayLose() {
 
 function displayReset() {
     outcomeEl.classList.add('hidden');
+    evaluationEl.textContent = 'Awaiting Guess';
 }
 
 function displayVictories(victoryCount) {

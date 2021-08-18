@@ -22,7 +22,7 @@ body {
     background-color: var(--color2);
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
-}
+} */
 
 header {
     display: flex;
